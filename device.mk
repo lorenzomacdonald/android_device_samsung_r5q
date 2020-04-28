@@ -73,6 +73,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     com.android.nfc_extras
+	
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2-service.r5q
 
 # Sensors
 PRODUCT_PACKAGES += \
