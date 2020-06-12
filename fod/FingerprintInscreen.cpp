@@ -91,7 +91,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 Return<void> FingerprintInscreen::onPress() {
     set(FP_GREEN_CIRCLE, "1");
     std::thread([this]() {
-        std::this_thread::sleep_for(std::chrono::milliseconds(76));
+        std::this_thread::sleep_for(std::chrono::milliseconds(46));
         mSehBiometricsFingerprintService->sehRequest(SEM_FINGER_STATE, 
             SEM_PARAM_PRESSED, stringToVec(SEM_AOSP_FQNAME), FingerprintInscreen::requestResult);
     }).detach();
